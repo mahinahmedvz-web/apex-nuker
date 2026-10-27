@@ -1,0 +1,5 @@
+# install tools once
+winget install Git.Git
+winget install Kitware.CMake
+# or just use MinGW / VS
+g++ -O3 -std=c++17 -static APEXCRYPT_NUKER_NX10.cpp resource.rc -o APEXCRYPT_NUKER_NX10.exe -lcurl -lssl -lcrypto -lws2_32 -lcrypt32 -lgdi32 -luser32
